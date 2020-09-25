@@ -117,7 +117,11 @@ class Easy_Store_Slider extends WP_Widget {
                             ?>
                         </div><!-- .es-slider-cat-menu -->
                 <?php } ?>
-                <div class="es-slider-section es-slider es-clearfix">
+
+                <?php 
+                    $style_slider_right = ($easy_store_slider_cat_menu != 1) ? "style='float: none; width: 100%'" : "";
+                ?>
+                <div class="es-slider-section es-slider es-clearfix" <?php echo $style_slider_right; ?>>
     				<?php
                         if( is_woocommerce_activated() ) {
                             $easy_store_slider_args = array(
