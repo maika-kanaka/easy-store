@@ -144,11 +144,17 @@ class Easy_Store_Slider extends WP_Widget {
     							if( has_post_thumbnail() ) {
     				?>
     								<div class="es-single-slide">
-    									<div class="es-image-holder"><figure><?php the_post_thumbnail( 'easy-store-slider' ); ?></figure></div>
+    									<div class="es-image-holder">
+                                            <figure>
+                                                <?php 
+                                                    $image_id = get_post_thumbnail_id(); 
+                                                    $image_attributes = wp_get_attachment_image_src( $image_id, 'full');
+                                                ?>
+                                                <img src="<?php echo $image_attributes[0]; ?>" alt="" class="attachment-easy-store-slider size-easy-store-slider wp-post-image" width="100%">
+                                            </figure>
+                                        </div>
                                         <div class="es-slide-content-wrap">
-                                            <h3 class="es-slide-title"><?php the_title(); ?></h3>
-        									<div class="es-slide-content"><?php the_excerpt(); ?></div>
-                                            <div class="es-slide-btn"><a href="<?php the_permalink(); ?>"><?php echo esc_html( $easy_store_slide_btn_text ); ?></a></div>
+                                            
                                         </div>
     								</div><!-- .es-single-slide -->
     				<?php
