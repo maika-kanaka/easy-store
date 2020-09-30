@@ -202,6 +202,8 @@ function easy_store_scripts() {
           wp_enqueue_script( 'np-sticky-menu-setting', get_template_directory_uri(). '/assets/library/sticky/sticky-setting.js', array( 'jquery-sticky' ), '20150309', true );
     }
 
+    wp_enqueue_style( 'easy-store-product-vendors', get_template_directory_uri() .'/assets/css/es-product-vendors.css', array(), esc_attr( $easy_store_version ) );
+
     wp_enqueue_script( 'easy-store-custom-scripts', get_template_directory_uri() .'/assets/js/es-custom-scripts.js', array( 'jquery' ), esc_attr( $easy_store_version ), true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
