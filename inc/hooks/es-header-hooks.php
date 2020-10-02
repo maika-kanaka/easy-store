@@ -269,7 +269,7 @@ if( ! function_exists( 'easy_store_innerpage_title_content' ) ) :
 				$header_class = 'no-bg-img';
 			}
 
-			$is_shop_vendor = strpos($_SERVER['REQUEST_URI'], trim("/vendor/ "));
+			$is_shop_vendor = strpos($_SERVER['REQUEST_URI'], trim("vendor/ "));
 	?>
 
 			<div class="custom-header <?php echo esc_attr( $header_class ); ?>" <?php echo ( ! empty( $inner_header_attribute ) ) ? ' style="' . esc_attr( $inner_header_attribute ) . '" ' : ''; ?>>

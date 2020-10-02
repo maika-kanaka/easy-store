@@ -35,23 +35,23 @@ $is_shop_vendor = strpos($_SERVER['REQUEST_URI'], trim("/vendor/ "));
 if ($is_shop_vendor) :
 
     $img_src = "";
-    if( strpos( $_SERVER['REQUEST_URI'], trim("/vendor/apotek-jelita ") ) !== false )
+    if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-sehat-jelita ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-sehat-jelita.png");
     }
-    else if( strpos( $_SERVER['REQUEST_URI'], trim("/vendor/apotek-anggun ") ) !== false )
+    else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-anggun ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-anggun.png");
     }
-    else if( strpos( $_SERVER['REQUEST_URI'], trim("/vendor/apotek-hijau ") ) !== false )
+    else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-hijau ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-hijau.png");
     }
-    else if( strpos( $_SERVER['REQUEST_URI'], trim("/vendor/apotek-tunggal ") ) !== false )
+    else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-tunggal ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-tunggal.png");
     }
-    else if( strpos( $_SERVER['REQUEST_URI'], trim("/vendor/apotek-permata ") ) !== false )
+    else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-permata ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-permata.png");
     }
