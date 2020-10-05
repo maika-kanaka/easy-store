@@ -38,22 +38,38 @@ if ($is_shop_vendor) :
     if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-sehat-jelita ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-sehat-jelita.png");
+        $nowa    = "081289717013";
+        $address = "Ruko Bidex Blok G 28-29 BSD City. Kel. Lengkong Gudang";
     }
     else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-anggun ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-anggun.png");
+        $nowa    = "081289717013";
+        $address = "Ruko griya loka sektor I-1 RF-1 No. 19-20. Kel Rawa buntu, Kec. Serpong";
     }
     else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-hijau ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-hijau.png");
+        $nowa    = "081289717013";
+        $address = "Ruko Golden Boulevard Blok S 05-06. Kel. Jelupang, Kec. Serpong Utara. 15323";
     }
     else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-tunggal ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-tunggal.png");
+        $nowa    = "081289717013";
+        $address = "JL. Raya Puspitek RT.004 RW.007, Pabuaran, Gunung Sindur. (Bizhub Serpong RD 12 dan RD 19)";
     }
     else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-permata ") ) !== false )
     {
         $img_src = home_url("/wp-content/uploads/2020/09/apotek-permata.png");
+        $nowa    = "081289717013";
+        $address = "Jl. Buaran Raya No. 39A-39B BSD Blok Batako. Serpong, Tangerang Selatan 15310";
+    }
+    else if( strpos( $_SERVER['REQUEST_URI'], trim("vendor/apotek-indah ") ) !== false )
+    {
+        $img_src = home_url("/wp-content/uploads/2020/09/apotek-indah.png");
+        $nowa    = "081289717013";
+        $address = "Ruko Golden Road Blok C-28/3-3A BSD Sektor VII C. Kel Lengkong Gudang, Kec Serpong";
     }
 ?>
 
@@ -72,15 +88,11 @@ if ($is_shop_vendor) :
 
                 <div class="store-contact"> 
                     <span class="store-location"> 
-                        <i class="fa fa-location-arrow"></i> TAMAN TEKNO BSD
+                        <i class="fa fa-location-arrow"></i> <?php echo $address; ?>
                     </span> 
                     <span class="store-telephone"> 
-                        <i class="fa fa-phone"></i> 62812 8971 7013
-                    </span> 
-                    <span class="store-email"> 
-                        <i class="fa fa-envelope"></i> 
-                        <a class="store-email-link" href="mailto:info@medinastore.it"> info@medinastore.it </a> 
-                    </span> 
+                        <i class="fa fa-phone"></i> <?php echo $no_wa; ?>
+                    </span>
                 </div>
             </div>
             <!-- <div class="store-socials"> 
